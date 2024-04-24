@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swiggy-app
+  labels:
+    app: swiggy-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: swiggy-app
+  template:
+    metadata:
+      labels:
+        app: swiggy-app
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+      - name: swiggy-app
+        image: 987075663466.dkr.ecr.us-east-1.amazonaws.com/swiggy:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 3000
