@@ -1,7 +1,7 @@
 node {
     
     stage('Checkout') {
-       git 'https://github.com/ravdy/nodejs-demo.git'
+       git 'git@github.com:Adapaka2023/Docker-Lab.git'
     }
     stage('Build docker image') {
        sh "docker build -t rameshadapaka/nodeapp:$BUILD_NUMBER ."
