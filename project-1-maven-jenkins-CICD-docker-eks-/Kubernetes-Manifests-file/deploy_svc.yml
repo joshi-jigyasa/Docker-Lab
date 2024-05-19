@@ -23,7 +23,7 @@ spec:
         imagePullPolicy: Always
         ports:
         #- containerPort: 8080
-        - contanierPort: 3000
+        - containerPort: 3000
   strategy:
     type: RollingUpdate
     rollingUpdate:
