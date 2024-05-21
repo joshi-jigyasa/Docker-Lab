@@ -6,7 +6,7 @@ RUN mvn package
 
 FROM tomcat:latest
 COPY --from=build /app/webapp/target/webapp.war /usr/local/tomcat/webapps/webapp.war
-RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
+#RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
 
 
 
