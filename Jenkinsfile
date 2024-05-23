@@ -56,7 +56,7 @@ pipeline {
 								sed -i "s#image:.*#image: $REPOSITORY_URI$AWS_ECR_REPO_NAME:$BUILD_NUMBER#g" deployment.yml
 								git add .
 								git commit -m "Update deployment Image to version \${BUILD_NUMBER}"
-								git push HEAD:main
+								git push https://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@${GIT_REPO_PATH} HEAD:main
 							'''
 						}
 					}
