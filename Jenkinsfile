@@ -10,7 +10,7 @@ pipeline {
         }
         
         
-        stage('Docker Build') {
+        stage('Docker Build ') {
             steps {
                 dir('Hotstar-DevOps-Project-NodeJS'){
                    sh '''
