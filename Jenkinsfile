@@ -31,7 +31,7 @@ pipeline {
             }
         }
 
-	         stage('Clone Git Repo') {
+	         stage('Clone Git Repo2') {
             steps {
                 git branch: 'main', url: 'https://github.com/joshi-jigyasa/Kubernetes-Lab.git'
             }
