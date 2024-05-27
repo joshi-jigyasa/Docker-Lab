@@ -31,6 +31,12 @@ pipeline {
             }
         }
 
+	         stage('Clone Git Repo') {
+            steps {
+                git branch: 'main', url: 'https://github.com/joshi-jigyasa/Kubernetes-Lab.git'
+            }
+        }
+        
         stage('Update Deployment file') {
 			steps {
 				dir('Hotstar-DevOps-Project-NodeJS/K8S') {
