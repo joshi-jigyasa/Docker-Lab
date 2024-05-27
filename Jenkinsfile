@@ -3,7 +3,7 @@ pipeline {
     
     stages {
         
-        stage('Clone Git Repo') {
+        stage('Clone Git Repo ') {
             steps {
                 git branch: 'main', url: 'https://github.com/joshi-jigyasa/Docker-Lab.git'
             }
